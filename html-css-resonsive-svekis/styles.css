@@ -19,11 +19,40 @@ header nav a {
     /* vertically center text */
     line-height: 40px;
     text-decoration: none;
+    background-color: #222222;
+    color: white;
+    /* makes item cover entire background */
+    display: block;
+}
+header nav a:hover {
+    background-color: red;
+    color: white;
 }
 body {
     background-color: aqua;
 }
+.menu {
+    display: none;
+}
 .main {
     clear: both;
     background-color: bisque;
+}
+
+@media all and (max-width: 740px) {
+    header nav ul li {
+        display: block;
+        text-align: center;
+    }
+    header nav ul {
+        width: 100%;
+    }
+    .menu {
+        background-color: black;
+        color: white;
+         display: block;
+         text-align: center;
+        /* is it required? */
+        /* width:100%;  */
+    }
 }
