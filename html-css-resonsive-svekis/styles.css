@@ -90,7 +90,32 @@ body {
     clear: both;
     background-color: bisque;
 }
-
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.first, .third {
+    width: 25%;
+}
+.col {
+    margin: auto;
+    width: 80%;
+}
+.second {
+    width: 50%;
+    text-align: left;
+}
+.footer>div {
+    float: left;
+    border: 1px solid #eee;
+}
+.footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 @media all and (max-width: 740px) {
     header nav ul li {
         display: block;
@@ -115,5 +140,20 @@ body {
     }
     .main img {
         width: 100%;
+    }
+
+    .first, .third {
+        width: 100%;
+    }
+    .col {
+        margin: auto;
+        width: 100%;
+    }
+    .second {
+        width: 100%;
+        text-align: center;
+    }
+    .second li {
+        list-style: none;
     }
 }
