@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Smokum&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'PT Sans', sans-serif;
 }
@@ -15,6 +18,27 @@ header>div {
     font-size: 4em;
     color: black;
     padding: 10px;
+}
+.main img {
+    float: left;
+    padding: 10px;
+    /* is this required */
+    max-width: 96%;
+    border: 10px solid white;
+    /* this is done to center the image */
+    margin: 2%;
+
+}
+.main article p::first-letter {
+    font-size: 2em;
+    color: red;
+}
+.main article {
+    padding: 10px;
+    font-size: 1.2em;
+    border-bottom: 1px solid black;
+    /* this resolved the image overlapping with borders */
+    overflow: hidden;
 }
 .sub-heading {
     font-size: 2.5em;
@@ -88,5 +112,8 @@ body {
     }
     .heading {
         padding: 0;
+    }
+    .main img {
+        width: 100%;
     }
 }
