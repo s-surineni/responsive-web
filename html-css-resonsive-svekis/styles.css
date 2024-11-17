@@ -85,10 +85,14 @@ body {
 }
 .menu {
     display: none;
+    padding: 5px;
 }
 .main {
     clear: both;
     background-color: bisque;
+}
+.menu:hover {
+    background-color: blue;
 }
 .footer {
     text-align: center;
@@ -116,6 +120,10 @@ body {
     display: table;
     clear: both;
 }
+.hide {
+    display: block;
+}
+
 @media all and (max-width: 740px) {
     header nav ul li {
         display: block;
@@ -155,5 +163,8 @@ body {
     }
     .second li {
         list-style: none;
+    }
+    .hide {
+        display: none;
     }
 }
